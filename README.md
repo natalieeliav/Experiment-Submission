@@ -78,12 +78,12 @@ python PythonGui-Experiment.py
 
 - Random assignment to conditions:
   - Complexity (simple/complex rhythms)
-  - Ear presentation (left/right)
+  - First ear presentation (left/right)
   - Sequence order
 - Practice Phase:
   - 2 practice trials per rhythm (listening only)
 - Testing Phase:
-  - 12 experimental trials per rhythm
+  - 12 experimental trials per rhythm (only one ear per sequence)
 - Breaks:
   - 15 seconds after 6 trials
   - 120 seconds between rhythms
