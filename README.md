@@ -43,16 +43,18 @@ pip install -r requirements.txt
    - Click '+' button at bottom left
    - Choose "Create Multi-Output Device"
    - Name it "Experiment Output"
-   - Check "BlackHole 2ch" and your headphones/speakers
+   - Check your headphones/speakers
+   - Check "BlackHole 2ch" (follow this order)
    - Set sample rate to 48.0 kHz
 
 3. Create Aggregate Device:
    - Click '+' button again
    - Choose "Create Aggregate Device"
    - Name it "Experiment Input"
-   - Check "BlackHole 2ch" and your built-in microphone
+   - Check your built-in microphone
+   - Check "BlackHole 2ch" (follow this order)
    - Set sample rate to 48.0 kHz
-   - Ensure Drift Correction is checked for BlackHole 2ch
+   - Ensure Drift Correction is checked for BlackHole 2ch and for the built-in microphone
 
 #### C. Configure System Audio
 1. Open System Settings > Sound
