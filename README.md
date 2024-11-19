@@ -60,10 +60,6 @@ pip install -r requirements.txt
 1. Open System Settings > Sound
 2. Set Output device to "Experiment Output"
 3. Set Input device to "Experiment Input"
-4. Verify in your audio settings:
-   - BlackHole 2ch (2 in, 2 out)
-   - Experiment Input (3 in, 0 out)
-   - Experiment Output (0 in, 2 out)
 
 ## Running the Experiment
 
@@ -117,7 +113,6 @@ The experiment uses [REPP (Rhythm Evaluation from Performance and Perception)](h
 
 ## Dependencies
 
-### Core Dependencies
 - matplotlib>=3.3.1
 - click>=7.1.2
 - scipy>=1.5.3
@@ -128,15 +123,10 @@ The experiment uses [REPP (Rhythm Evaluation from Performance and Perception)](h
 - tk>=8.6
 - repp>=0.6.0 (from GitLab repository)
 
-### Development Dependencies
-- pytest>=6.1.2
-- pytest-benchmark>=3.2.3
-
 ## Troubleshooting
 
 1. Audio Device Issues:
    - Ensure BlackHole is properly installed
-   - Verify sample rates match (48.0 kHz) across all devices
    - Check that both "Experiment Input" and "Experiment Output" are properly configured
    - Make sure BlackHole 2ch is selected in both aggregate devices
 
