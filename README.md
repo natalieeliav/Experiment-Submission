@@ -76,46 +76,36 @@ python PythonGui-Experiment.py
 
 ## Experiment Design
 
+### Random Assignment
 Participants are randomly assigned to:
+1. **Complexity Level** (maintained throughout experiment)
+   - Simple rhythms
+   - Complex rhythms
 
-Complexity Level (maintained throughout experiment)
+2. **Initial Parameters**
+   - First ear presentation (left/right)
+   - Sequence order (1st/2nd)
 
-Simple rhythms
-Complex rhythms
+### Experimental Flow
 
+#### For Each Sequence:
 
-Initial Parameters
+1. **Practice Phase**
+   - 2 practice trials (listening only, in both ears)
+   
+2. **First Testing Block**
+   - 6 trials with assigned ear
+   - 15-second break
+   
+3. **Second Testing Block**
+   - 6 additional trials with the assigned ear
 
-First ear presentation (left/right)
-Sequence order (1st/2nd)
+**Important Notes:**
 
-
-
-## Experimental Structure
-
-For Each Sequence:
-
-Practice Phase
-
-2 practice trials (listening only)
-
-
-First Testing Block
-
-6 trials with assigned ear
-15-second break
-
-
-Second Testing Block
-
-6 additional trials
-
-Important Notes:
-
-Both sequences are from the same complexity level (simple or complex)
-Each sequence is presented to only one ear
-The ear presentation switches between sequences
-There is a 120 sec break between the two sequences
+- Both sequences are from the same complexity level (simple or complex)
+- Each sequence is presented to only one ear
+- The ear presentation switches between sequences
+- There is a 120 seconds break between the two sequences
 
 ## Data Output
 
