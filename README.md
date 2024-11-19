@@ -120,7 +120,6 @@ The experiment uses [REPP (Rhythm Evaluation from Performance and Perception)](h
 - sounddevice>=0.4.1
 - numpy>=1.20.2
 - pandas>=1.3.0
-- tk>=8.6
 - repp>=0.6.0 (from GitLab repository)
 
 ## Troubleshooting
