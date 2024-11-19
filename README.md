@@ -65,7 +65,7 @@ pip install -r requirements.txt
 
 1. Launch the application:
 ```bash
-python main.py
+python PythonGui-Experiment.py
 ```
 
 2. Follow the GUI prompts:
