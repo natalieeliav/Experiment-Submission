@@ -668,7 +668,6 @@ class RhythmExperimentGUI:
 
                     # Progress to next trial or break
                     self.current_trial += 1
-                    self.update_progress()
 
                     if self.current_trial == 6:
                         self.master.after(100, lambda: self.take_break(15))
