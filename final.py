@@ -725,10 +725,9 @@ class RhythmExperimentGUI:
         if self.current_trial == 6:
             self.next_button.grid_remove()
             self.label.config(text=f"""Recording trial 7/12
-
-                    1. Tap along as accurately as possible with EACH beat
-                    2. Remember to ignore the 3 marker beats at start/end
-                    3. remember to tap with your right index finger""")
+            1. Tap along as accurately as possible with EACH beat
+            2. Remember to ignore the 3 marker beats at start/end
+            3. remember to tap with your right index finger""")
             self.master.after(100, self.run_trial)
         else:  # After stimulus 1
             self.current_stimulus = 2
