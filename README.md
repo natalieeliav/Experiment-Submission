@@ -74,19 +74,48 @@ python PythonGui-Experiment.py
    - Practice rhythms
    - Complete experimental trials
 
-## Experiment Structure
+## Experiment Design
 
-- Random assignment to conditions:
-  - Complexity (simple/complex rhythms)
-  - First ear presentation (left/right)
-  - Sequence order
-- Practice Phase:
-  - 2 practice trials per rhythm (listening only)
-- Testing Phase:
-  - 12 experimental trials per rhythm (only one ear per sequence)
-- Breaks:
-  - 15 seconds after 6 trials
-  - 120 seconds between rhythms
+Participants are randomly assigned to:
+
+Complexity Level (maintained throughout experiment)
+
+Simple rhythms
+Complex rhythms
+
+
+Initial Parameters
+
+First ear presentation (left/right)
+Sequence order (1st/2nd)
+
+
+
+## Experimental Structure
+
+For Each Sequence:
+
+Practice Phase
+
+2 practice trials (listening only)
+
+
+First Testing Block
+
+6 trials with assigned ear
+15-second break
+
+
+Second Testing Block
+
+6 additional trials
+
+Important Notes:
+
+Both sequences are from the same complexity level (simple or complex)
+Each sequence is presented to only one ear
+The ear presentation switches between sequences
+There is a 120 sec break between the two sequences
 
 ## Data Output
 
