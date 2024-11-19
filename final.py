@@ -24,9 +24,9 @@ import random
 import pandas as pd
 import glob
 
-from repp.repp.config import sms_tapping
-from repp.repp.stimulus import REPPStimulus
-from repp.repp.analysis import REPPAnalysis
+from repp.config import sms_tapping
+from repp.stimulus import REPPStimulus
+from repp.analysis import REPPAnalysis
 
 
 def create_participant_analysis_csv(output, analysis_result, is_failed, trial_num, output_dir, stimulus_num,
