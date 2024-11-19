@@ -15,8 +15,8 @@ A Python application for conducting rhythm perception and synchronization experi
 ### 1. Clone Repositories
 ```bash
 # Clone main repository
-git clone [your-repository-url]
-cd [repository-name]
+git clone https://github.com/natalieeliav/Experiment-Submission.git
+cd Experiment-Submission
 
 # Clone REPP in the project directory
 git clone https://gitlab.com/computational-audition/repp.git
