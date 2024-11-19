@@ -758,7 +758,6 @@ class RhythmExperimentGUI:
 
         Your data has been saved successfully."""
 
-        self.progress.grid_remove()  # Hide progress bar
         self.label.config(text=completion_text)
         self.next_button.config(text="Close", command=self.master.destroy)
         self.next_button.grid()
