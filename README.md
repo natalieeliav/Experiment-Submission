@@ -8,6 +8,7 @@ A Python application for conducting rhythm perception and synchronization experi
 - MacOS environment
 - BlackHole audio driver
 - Properly configured audio devices (details in Audio Setup)
+- Working headphones / airpods / earplugs
 
 ## Installation
 
