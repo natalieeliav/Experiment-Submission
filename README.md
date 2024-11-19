@@ -18,7 +18,7 @@ A Python application for conducting rhythm perception and synchronization experi
 git clone [your-repository-url]
 cd [repository-name]
 
-# Install REPP dependency
+# Clone REPP in the project directory
 git clone https://gitlab.com/computational-audition/repp.git
 cd repp
 pip install -e .
