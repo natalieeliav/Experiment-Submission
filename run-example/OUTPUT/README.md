@@ -1,6 +1,6 @@
 ## Example Directory
 Due to storage constraints, this repository includes a simplified example showing only two trials.
-The real stracture is as described in the previous README file.
+The real stracture is as described in the main README file.
 
 ## File Descriptions
 
