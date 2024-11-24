@@ -1,6 +1,17 @@
 ## Output Example Directory
 Due to storage constraints, this repository includes a simplified example showing only two trials.
-The real stracture is as described in the main README file.
+In the actual experiment, results are saved in the `output` directory with the following structure:
+```
+output/
+└── participant_id/
+    ├── allocation.txt
+    ├── participant_analysis.csv
+    └── stimulus_X/
+        └── trial_Y/
+            ├── recording_trial_Y.wav
+            ├── numerical_data_trial_Y.json
+            └── plot_trial_Y.png
+```
 
 ## File Descriptions
 
