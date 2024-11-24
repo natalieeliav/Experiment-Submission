@@ -1,6 +1,6 @@
 # Rhythm Experiment Application
 
-A Python application for conducting rhythm perception and synchronization experiments. The application presents rhythmic patterns and records participant responses through tapping.
+A Python application for conducting rhythm perception and synchronization experiment investigating the lateral relationships in sensory-motor integration. The application presents rhythmic patterns and records participant responses through tapping for both ipsilateral and contralateral ears.
 
 ## Prerequisites
 
