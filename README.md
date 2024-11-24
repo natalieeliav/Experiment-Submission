@@ -142,6 +142,33 @@ The experiment uses [REPP (Rhythm Evaluation from Performance and Perception)](h
 - pandas>=1.3.0
 - repp>=0.6.0 (from GitLab repository)
 
+## Run Example
+
+This repository includes a `run-example` directory that contains an example run of an experiment submission process, including stimulus trials and participant analysis.
+
+### Project Structure of run-example
+- `OUTPUT/`: Directory containing output files
+  - `Stimulus 1 Trial 1/`: Directory for first stimulus trial 1
+  - `Stimulus 2 Trial 1/`: Directory for second stimulus trial 1
+  - `README.md`: More information about the output
+  - `allocation.txt`: Contains participant allocation information
+  - `participant_analysis.csv`: Contains analysis results for the participant
+- `Experiment Screen Recording`: [View the experiment screen recording](https://drive.google.com/file/d/1JkSBiQr7USAOlaPEKG1UtsnkLb9W3r7i/view?usp=sharing)
+   * Contains a video of the experiment flow, presenting 12 trials of the first sequence, the 2-minute break, and the first trial of the second sequence. (The other trials follow the same pattern)
+
+### Output Example Directory
+Due to storage constraints, this repository includes a simplified example showing only two trials.
+The real structure is as described above.
+
+### File Descriptions in run-example
+- `allocation.txt`: Contains participant allocation information
+- `participant_analysis.csv`: Contains analysis results for the participant
+- `recording_trial_Y.wav`: Audio recording from each trial (stimulus + tapping)
+- `numerical_data_trial_Y.json`: Raw numerical data from each trial
+- `plot_trial_Y.png`: Visualization of trial data
+
+Note: 'Y' in file names represents the trial number.
+
 ## Troubleshooting
 
 1. Audio Device Issues:
