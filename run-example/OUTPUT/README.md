@@ -13,7 +13,7 @@ output/
             └── plot_trial_Y.png
 ```
 
-## File Descriptions
+## Output Files Descriptions
 
 - `allocation.txt`: Contains participant allocation information
 - `participant_analysis.csv`: Contains analysis results for the participant
