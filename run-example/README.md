@@ -1,4 +1,4 @@
-# Experiment-Submission
+# run-example
 
 This directory contains an example run of an experiment submission process, including stimulus trials and participant analysis.
 
