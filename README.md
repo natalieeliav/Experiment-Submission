@@ -131,7 +131,7 @@ The experiment uses [REPP (Rhythm Evaluation from Performance and Perception)](h
 - Analysis of timing accuracy and precision
 - Visualization of tapping patterns
 
-## Run-example
+## Run-example Directory
 
 This repository includes a `run-example` directory that contains an example run of an experiment submission process, including stimulus trials and participant analysis.
 
