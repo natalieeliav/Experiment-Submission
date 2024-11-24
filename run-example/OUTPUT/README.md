@@ -1,4 +1,4 @@
-## Example Directory
+## Output Example Directory
 Due to storage constraints, this repository includes a simplified example showing only two trials.
 The real stracture is as described in the main README file.
 
