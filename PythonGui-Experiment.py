@@ -187,7 +187,7 @@ class RhythmExperimentGUI:
         ]
 
         # Random assignments
-        self.complexity = random.choice(['complex', 'simple'])
+        self.complexity = random.choice(['simple', 'simple'])
         self.ear = random.choice(['right', 'left'])
         self.sequence_order = random.choice([0, 1])
 
@@ -285,18 +285,21 @@ class RhythmExperimentGUI:
         self.frame = ttk.Frame(self.master, padding="10")
         self.frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
 
-        welcome_text = """
-        This experiment investigates rhythm perception and synchronization abilities.
+        welcome_text = """This experiment investigates synchronization abilities.
 
-        Your participation will take approximately 15 minutes. You will hear rhythmic patterns through headphones and tap along with them.
+Your participation will take approximately 15 minutes. You
+will hear rhythmic patterns through headphones and tap along
+with them.
 
-        Your data will be saved anonymously using a participant ID. You may stop participating at any time by closing this window.
+Your data will be saved anonymously using a participant ID.
+You may stop participating at any time by closing this window.
 
-        By clicking 'Start', you agree to participate in this experiment.
+By clicking 'Start', you agree to participate in this
+experiment.
 
-        Thank you for your time
+Thank you for your time,
 
-        Adi and Natalie"""
+Adi and Natalie"""
 
         self.label = ttk.Label(self.frame, text=welcome_text, wraplength=400)
         self.label.grid(row=0, column=0, pady=10)
@@ -348,11 +351,11 @@ class RhythmExperimentGUI:
         """
         instructions = """In this experiment, you will hear and tap along with 2 different rhythms.
 
-    1. First, each rhythm will be played twice for practice - just listen, no tapping needed.
-    2. Then, you will tap along with each rhythm for multiple trials.
-    3. Use your right hand index finger to tap in sync with the beats.
-    4. The rhythms will be played through one ear at a time.
-    5. Each rhythm starts and ends with 3 marker beats - you don't need to tap these."""
+1. First, each rhythm will be played twice for practice - just listen, no tapping is needed.\n
+2. Then, you will tap along with each rhythm for multiple trials.\n
+3. Use your right hand index finger to tap in sync with the beats.\n
+4. The rhythms will be played through one ear at a time.\n
+5. Each rhythm starts and ends with 3 marker beats - you do NOT need to tap them."""
 
         self.label.config(text=instructions)
         self.next_button.config(text="Next", command=self.show_tapping_instructions)
@@ -363,13 +366,13 @@ class RhythmExperimentGUI:
         """
         instructions = """Important tapping instructions:
 
-    1. Use ONLY your right hand's index finger
-    2. Tap on the laptop surface next to the touchpad
-    3. Tap gently but firmly with your fingertip
-    4. DO NOT tap on:
-    - Keys
-    - Mouse buttons
-    - Touchpad"""
+1. Use ONLY your right hand's index finger\n
+2. Tap on the laptop surface next to the touchpad\n
+3. Tap gently but firmly with your fingertip\n
+4. DO NOT tap on:
+- Keys
+- Mouse buttons
+- Touchpad"""
 
         self.label.config(text=instructions)
         self.next_button.config(command=self.start_headphone_check)
@@ -380,11 +383,12 @@ class RhythmExperimentGUI:
         """
         self.label.config(text="""Right Earbud Check:
 
-    At first, please make sure to insert your earbuds properly.
-    1. You will hear a single beat
-    2. Tap once when you hear it
-    3. The sound should come from your RIGHT ear
-    4. If you hear it in your LEFT ear, please switch your earbuds""")
+At first, please make sure to insert your earbuds properly.\n
+1. You will hear a single beat\n
+2. Tap once when you hear it\n
+3. The sound should come from your RIGHT ear\n
+4. If you hear it in your LEFT ear, please switch your earbuds""")
+
         self.next_button.config(text="Start Check", command=self.check_right_ear)
 
     def check_right_ear(self):
@@ -512,14 +516,12 @@ class RhythmExperimentGUI:
             self.ear = 'left' if self.ear == 'right' else 'right'
         rhythm = self.rhythms[self.sequence_order if self.current_stimulus == 1 else 1 - self.sequence_order]
 
-        practice_text = f"""You will now hear Rhythm {self.current_stimulus} of 2.
-
-        1. The rhythm will play twice for practice
-        2. Just LISTEN during practice - do not tap yet
-        3. Notice the 3 marker beats at the start and end
-        4. After practice is finished, you'll tap along this rhythm for 12 trials
-
-        Press 'Start Practice' when ready."""
+        practice_text = f"""You will now hear Rhythm {self.current_stimulus} of 2.\n\n
+1. The rhythm will play twice for practice\n
+2. Just LISTEN during practice - do not tap yet\n
+3. Notice the 3 marker beats at the start and end - NO NEED TO TAP THEM\n
+4. After practice is finished, you'll tap along this rhythm for 12 trials\n\n\n\n
+Press 'Start Practice' when ready."""
 
         self.label.config(text=practice_text)
         self.current_repp_stimulus = REPPStimulus(f"rhythm_{self.current_stimulus}", config=self.config)
@@ -538,8 +540,10 @@ class RhythmExperimentGUI:
         def play_twice():
             for i in range(2):
                 self.label.config(text=f"""Playing practice for the  {i + 1}/2 time.
-                    Just LISTEN during practice - do not tap yet
-                    Notice the 3 marker beats at the start and end""")
+
+Just LISTEN during practice - do not tap yet\n
+Notice the 3 marker beats at the start and end - NO NEED TO TAP THEM""")
+
                 sd.play(self.stim_prepared, self.config.FS)
                 sd.wait()
                 if i == 0:
@@ -559,13 +563,15 @@ class RhythmExperimentGUI:
 
         self.label.config(text=f"""Ready to start Rhythm {self.current_stimulus} trials.
 
-        1. Tap along as accurately as possible with EACH beat
-        2. The rhythm will be played only in your {self.ear.upper()} ear
-        3. Remember to ignore the 3 marker beats at start/end
-        4. Please remember to tap with your right index finger
-        5. This is trial 1 of 12
+1. Tap along as accurately as possible with EACH beat\n
+2. The rhythm will be played only in your {self.ear.upper()} ear\n
+3. Remember to ignore the 3 marker beats at start/end\n
+4. Remember to tap with your right index finger\n
+5. You will have a 15 seconds break after the 6th trial\n
+6. You will have a 2 minutes break after all 12 trials\n\n
 
-        Press 'Start Recording' when ready.""")
+This is trial 1 of 12
+Press 'Start Recording' when ready.""")
 
         self.next_button.config(text="Start Recording", command=self.run_trial)
         self.next_button.grid()
@@ -592,11 +598,9 @@ class RhythmExperimentGUI:
         if self.current_trial < 12:
             self.label.config(text=f"""Recording trial {self.current_trial + 2}/12
 
-            1. Tap along as accurately as possible with EACH beat
-            2. Remember to ignore the 3 marker beats at start/end
-            3. remember to tap with your right index finger
-
-            you will have a 15 sec break after the 6th trial""")
+1. Tap along as accurately as possible with EACH beat\n
+2. Remember to ignore the 3 marker beats at start/end\n
+3. remember to tap with your right index finger""")
 
             try:
                 # Create directory for this trial
@@ -725,9 +729,10 @@ class RhythmExperimentGUI:
         if self.current_trial == 6:
             self.next_button.grid_remove()
             self.label.config(text=f"""Recording trial 7/12
-            1. Tap along as accurately as possible with EACH beat
-            2. Remember to ignore the 3 marker beats at start/end
-            3. remember to tap with your right index finger""")
+
+1. Tap along as accurately as possible with EACH beat\n
+2. Remember to ignore the 3 marker beats at start/end\n
+3. remember to tap with your right index finger""")
             self.master.after(100, self.run_trial)
         else:  # After stimulus 1
             self.current_stimulus = 2
@@ -751,11 +756,9 @@ class RhythmExperimentGUI:
         """
         completion_text = """Experiment Complete!
 
-        Thank you for your participation.
-
-        You may now close this window.
-
-        Your data has been saved successfully."""
+Thank you for your participation.\n
+You may now close this window.\n
+Your data has been saved successfully."""
 
         self.label.config(text=completion_text)
         self.next_button.config(text="Close", command=self.master.destroy)
