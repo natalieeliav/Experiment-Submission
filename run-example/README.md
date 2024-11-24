@@ -10,4 +10,4 @@ This directory contains an example run of an experiment submission process, incl
   - `README.md`: More information about the output
   - `allocation.txt`: Contains participant allocation information
   - `participant_analysis.csv`: Contains analysis results for the participant
-- `Experiment Screen Recording`: [View the experiment screen recording](https://drive.google.com/file/d/1JkSBiQr7USA0laPEKG1UtsnkLb9W3r7i/view?usp=sharing)
+- `Experiment Screen Recording`: [View the experiment screen recording](https://drive.google.com/file/d/1JkSBiQr7USAOlaPEKG1UtsnkLb9W3r7i/view?usp=sharing)
