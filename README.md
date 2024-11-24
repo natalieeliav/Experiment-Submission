@@ -131,17 +131,6 @@ The experiment uses [REPP (Rhythm Evaluation from Performance and Perception)](h
 - Analysis of timing accuracy and precision
 - Visualization of tapping patterns
 
-## Dependencies
-
-- matplotlib>=3.3.1
-- click>=7.1.2
-- scipy>=1.5.3
-- jupyter>=1.0.0
-- sounddevice>=0.4.1
-- numpy>=1.20.2
-- pandas>=1.3.0
-- repp>=0.6.0 (from GitLab repository)
-
 ## Run Example
 
 This repository includes a `run-example` directory that contains an example run of an experiment submission process, including stimulus trials and participant analysis.
@@ -169,6 +158,17 @@ The real structure is as described above.
 
 Note: 'Y' in file names represents the trial number.
 
+## Dependencies
+
+- matplotlib>=3.3.1
+- click>=7.1.2
+- scipy>=1.5.3
+- jupyter>=1.0.0
+- sounddevice>=0.4.1
+- numpy>=1.20.2
+- pandas>=1.3.0
+- repp>=0.6.0 (from GitLab repository)
+  
 ## Troubleshooting
 
 1. Audio Device Issues:
