@@ -95,7 +95,7 @@ Participants are randomly assigned to:
    
 2. **First Testing Block**
    - 6 trials with assigned ear
-   - 15-second break
+   - 15 seconds break
    
 3. **Second Testing Block**
    - 6 additional trials with the assigned ear
@@ -106,6 +106,7 @@ Participants are randomly assigned to:
 - Each sequence is presented to only one ear
 - The ear presentation switches between sequences
 - There is a 120 seconds break between the two sequences
+- The code uses REPP framework for stimulus generation and analysis
 
 ## Data Output
 
