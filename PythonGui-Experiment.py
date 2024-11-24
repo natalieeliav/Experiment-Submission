@@ -187,7 +187,7 @@ class RhythmExperimentGUI:
         ]
 
         # Random assignments
-        self.complexity = random.choice(['simple', 'simple'])
+        self.complexity = random.choice(['simple', 'complex'])
         self.ear = random.choice(['right', 'left'])
         self.sequence_order = random.choice([0, 1])
 
