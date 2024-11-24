@@ -11,3 +11,4 @@ This directory contains an example run of an experiment submission process, incl
   - `allocation.txt`: Contains participant allocation information
   - `participant_analysis.csv`: Contains analysis results for the participant
 - `Experiment Screen Recording`: [View the experiment screen recording](https://drive.google.com/file/d/1JkSBiQr7USAOlaPEKG1UtsnkLb9W3r7i/view?usp=sharing)
+Contains a video of the experiment flow, presenting 12 trials of the first sequence, the 2 minutes break, and the first trial of the second sequence. (The others are the same) 
